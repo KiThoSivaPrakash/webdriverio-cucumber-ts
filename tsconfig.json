@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "*": ["./*"],
+            "Core": ["Pages/Core/Core"],
+            "page-objects/*":[".../../page-objects/LS/Release1.0/*",".../../page-objects/LS/Release1.1/*",".../../page-objects/LS/Release2.0/*"],
+            "src/*": ["./src/*"]
+        },
+        "typeRoots": ["./types"],
+        "types": [
+            "node",
+            "@wdio/sync",
+            "chai",
+            "@wdio/cucumber-framework",
+            "reflect-metadata"
+        ],
+        "target": "es5",
+        "lib": ["es2018", "dom"],
+        "experimentalDecorators": true
+    },
+    "include": ["./**/*.ts", "hooks/beforeHook.js"]
+}
