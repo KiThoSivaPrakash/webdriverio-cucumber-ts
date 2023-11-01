@@ -142,7 +142,7 @@ Verify_Content_of_RegAComplaint(DataTable){
 verify_links_of_RegAComplaint(){
 
     this.contactus_link.isDisplayed();
-    this.readMore_link.isDisplayed
+    this.readMore_link.isDisplayed();
     console.log("Links are present on page");
   }
 
